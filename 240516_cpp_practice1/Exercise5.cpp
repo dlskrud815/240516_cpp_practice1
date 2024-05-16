@@ -26,7 +26,7 @@ public:
 		this->manufacturer = manufacturer;
 	}
 
-	void printSnack()
+	void printSnack() override
 	{
 		cout << "상품명: " << this->name << endl;
 	}
@@ -48,7 +48,7 @@ public:
 		this->manufacturer = manufacturer;
 	}
 
-	void printSnack()
+	void printSnack() override
 	{
 		cout << "상품명: " << this->name << endl;
 	}
