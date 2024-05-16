@@ -8,15 +8,18 @@ public:
 	Snack() {}
 
 	virtual void printSnack() = 0;
+
+protected:
+	int cost = 0;
+	string name;
+	string manufacturer;
 };
 
 class Candy : public Snack
 {
 private:
 	string flavor;
-	int cost = 0;
-	string name;
-	string manufacturer;
+
 public:
 	Candy(string flavor, int cost, string name, string manufacturer) 
 	{
@@ -36,9 +39,7 @@ class Chocolate : public Snack
 {
 private:
 	string shape;
-	int cost = 0;
-	string name;
-	string manufacturer;
+
 public:
 	Chocolate(string shape, int cost, string name, string manufacturer)
 	{
