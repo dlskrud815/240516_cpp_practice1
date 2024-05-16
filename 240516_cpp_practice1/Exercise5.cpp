@@ -61,11 +61,7 @@ int main()
 	Snack* chocolate1 = new Chocolate("판", 1000, "가나", "롯데");
 	Snack* chocolate2 = new Chocolate("환", 2500, "페레로로쉐", "페레로");
 
-	Snack* snackBasket[4];
-	snackBasket[0] = candy1;
-	snackBasket[1] = candy2;
-	snackBasket[2] = chocolate1;
-	snackBasket[3] = chocolate2;
+	Snack* snackBasket[4] = {candy1, candy2, chocolate1, chocolate2};
 
 	for (int i = 0; i < 4; i++)
 	{
