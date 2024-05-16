@@ -64,7 +64,7 @@ int main()
 
 	Snack* snackBasket[4] = {candy1, candy2, chocolate1, chocolate2};
 
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < sizeof(snackBasket) / sizeof(snackBasket[0]); i++)
 	{
 		snackBasket[i]->printSnack();
 	}
