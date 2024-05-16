@@ -3,7 +3,7 @@
 using namespace std;
 
 
-class Shape
+class Shape //virtual 메소드를 하나 이상 가지고 있는 추상 메소드
 {
 protected:
 	Shape() {}
@@ -15,6 +15,8 @@ protected:
 class Circle : public Shape
 {
 public:
+	Circle() {}
+
 	void draw() override //오버라이딩 필수
 	{
 		cout << "원" << endl;
@@ -24,6 +26,8 @@ public:
 class Rect : public Shape
 {
 public:
+	Rect() {}
+
 	void draw() override //
 	{
 		cout << "사각형" << endl;
@@ -33,6 +37,8 @@ public:
 class Triangle : public Shape
 {
 public:
+	Triangle() {}
+	
 	void draw() override //
 	{
 		cout << "삼각형" << endl;
