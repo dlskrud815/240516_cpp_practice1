@@ -3,7 +3,7 @@
 using namespace std;
 
 
-class Shape //virtual 메소드를 하나 이상 가지고 있는 추상 메소드
+class Shape //virtual 메소드를 하나 이상 가지고 있는 추상 클래스
 {
 protected:
 	Shape() {}
