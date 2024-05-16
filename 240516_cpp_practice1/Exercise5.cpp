@@ -1,4 +1,5 @@
 #include <iostream>
+#define SNACK_BASKET_SIZE 4
 
 using namespace std;
 
@@ -62,7 +63,7 @@ int main()
 	Snack* chocolate1 = new Chocolate("판", 1000, "가나", "롯데");
 	Snack* chocolate2 = new Chocolate("환", 2500, "페레로로쉐", "페레로");
 
-	Snack* snackBasket[4] = {candy1, candy2, chocolate1, chocolate2};
+	Snack* snackBasket[SNACK_BASKET_SIZE] = {candy1, candy2, chocolate1, chocolate2};
 
 	for (int i = 0; i < sizeof(snackBasket) / sizeof(snackBasket[0]); i++)
 	{
