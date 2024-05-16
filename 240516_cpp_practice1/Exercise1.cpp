@@ -40,7 +40,7 @@ public:
 	void printArea()
 	{
 		printInfo();
-		cout << "»ç°¢Çü ³ÐÀÌ.. " << baseLength * verticalLength << endl;
+		cout << "* »ç°¢Çü ³ÐÀÌ.. " << baseLength * verticalLength << endl << endl;
 	}
 };
 
@@ -61,7 +61,7 @@ public:
 	void printArea()
 	{
 		printInfo();
-		cout << "»ï°¢Çü ³ÐÀÌ´Â.. " << baseLength * heightLength * 0.5 << endl;
+		cout << "* »ï°¢Çü ³ÐÀÌ´Â.. " << baseLength * heightLength * 0.5 << endl << endl;
 	}
 };
 
