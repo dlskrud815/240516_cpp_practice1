@@ -29,7 +29,7 @@ public:
 		this->name = name;
 		this->manufacturer = manufacturer;
 	}
-
+	
 	void printSnack() override
 	{
 		cout << "»óÇ°¸í: " << this->name << endl;
@@ -69,6 +69,8 @@ int main()
 	{
 		snackBasket[i]->printSnack();
 	}
+
+	delete[] snackBasket;
 
 	return 0;
 }
