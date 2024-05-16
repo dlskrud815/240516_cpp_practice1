@@ -10,7 +10,7 @@ protected:
 		this->sideNum = 0;
 		this->baseLength = 0;
 
-		//cout << "Shape 클래스" << endl;
+		cout << "Shape 클래스" << endl;
 	}
 
 	int sideNum; //변의 개수
@@ -18,7 +18,7 @@ protected:
 
 	void printInfo()
 	{
-		cout << "변의 개수: " << sideNum << endl
+		cout << endl << "변의 개수: " << sideNum << endl
 			<< "밑변의 길이: " << baseLength << endl;
 	}
 };
@@ -35,7 +35,7 @@ public:
 		this->baseLength = baseLength;
 		this->verticalLength = verticalLength;
 
-		//cout << "Rectangle 클래스" << endl;
+		cout << "Rectangle 클래스" << endl;
 	}
 
 	float Area()
@@ -63,7 +63,7 @@ public:
 		this->baseLength = baseLength;
 		this->heightLength = heightLength;
 
-		//cout << "Triagle 클래스" << endl;
+		cout << "Triagle 클래스" << endl;
 	}
 
 	float Area()
