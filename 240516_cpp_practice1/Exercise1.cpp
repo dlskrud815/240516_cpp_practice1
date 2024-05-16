@@ -25,6 +25,9 @@ protected:
 
 class Rectangle : public Shape
 {
+private:
+	float verticalLength;
+
 public:
 	Rectangle(float verticalLength, float baseLength) : Shape(this->sideNum, this->baseLength)
 	{
@@ -35,17 +38,18 @@ public:
 		//cout << "Rectangle Å¬·¡½º" << endl;
 	}
 
-	float verticalLength;
-
 	void printArea()
 	{
 		printInfo();
-		cout << "* »ç°¢Çü ³ÐÀÌ.. " << baseLength * verticalLength << endl << endl;
+		cout << "* »ç°¢Çü ³ÐÀÌ.. " << this->baseLength * this->verticalLength << endl << endl;
 	}
 };
 
 class Triagle : public Shape
 {
+private:
+	float heightLength;
+
 public:
 	Triagle(float heightLength, float baseLength) : Shape(this->sideNum, this->baseLength)
 	{
@@ -55,13 +59,11 @@ public:
 
 		//cout << "Triagle Å¬·¡½º" << endl;
 	}
-	
-	float heightLength;
 
 	void printArea()
 	{
 		printInfo();
-		cout << "* »ï°¢Çü ³ÐÀÌ´Â.. " << baseLength * heightLength * 0.5 << endl << endl;
+		cout << "* »ï°¢Çü ³ÐÀÌ´Â.. " << this->baseLength * this->heightLength * 0.5 << endl << endl;
 	}
 };
 
