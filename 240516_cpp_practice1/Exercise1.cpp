@@ -5,7 +5,7 @@ using namespace std;
 class Shape 
 {
 protected:
-	Shape(int sideNum, float baseLength)
+	Shape()
 	{
 		this->sideNum = 0;
 		this->baseLength = 0;
@@ -29,7 +29,7 @@ private:
 	float verticalLength;
 
 public:
-	Rectangle(float verticalLength, float baseLength) : Shape(this->sideNum, this->baseLength)
+	Rectangle(float verticalLength, float baseLength)
 	{
 		this->sideNum = 4;
 		this->baseLength = baseLength;
@@ -38,11 +38,16 @@ public:
 		//cout << "Rectangle 클래스" << endl;
 	}
 
+	float Area()
+	{
+		return this->baseLength * this->verticalLength;
+	}
+
 	void printArea()
 	{
 		printInfo();
 		cout << "세로 길이: " << this->verticalLength << endl << endl
-			<< "* 사각형 넓이는.. " << this->baseLength * this->verticalLength << endl << endl;
+			<< "* 사각형 넓이는.. " << Area() << endl << endl;
 	}
 };
 
@@ -52,7 +57,7 @@ private:
 	float heightLength;
 
 public:
-	Triagle(float heightLength, float baseLength) : Shape(this->sideNum, this->baseLength)
+	Triagle(float heightLength, float baseLength)
 	{
 		this->sideNum = 3;
 		this->baseLength = baseLength;
@@ -61,11 +66,16 @@ public:
 		//cout << "Triagle 클래스" << endl;
 	}
 
+	float Area()
+	{
+		return this->baseLength * this->heightLength * 0.5;
+	}
+
 	void printArea()
 	{
 		printInfo();
 		cout << "높이의 길이: " << this->heightLength << endl << endl 
-			<< "* 삼각형 넓이는.. " << this->baseLength * this->heightLength * 0.5 << endl << endl;
+			<< "* 삼각형 넓이는.. " << Area() << endl << endl;
 	}
 };
 
