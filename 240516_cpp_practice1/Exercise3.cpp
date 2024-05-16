@@ -50,7 +50,7 @@ public:
 			<< "* 사각형 넓이는.. " << Area() << endl << endl;
 	}
 
-	void printInfo(int w, int h) //오버로딩
+	void printInfo(float w, float h) //오버로딩
 	{
 		this->baseLength = w;
 		this->verticalLength = h;
@@ -88,7 +88,7 @@ public:
 			<< "* 삼각형 넓이는.. " << Area() << endl << endl;
 	}
 
-	void printInfo(int w, int h) //오버로딩
+	void printInfo(float w, float h) //오버로딩
 	{
 		this->baseLength = w;
 		this->heightLength = h;
