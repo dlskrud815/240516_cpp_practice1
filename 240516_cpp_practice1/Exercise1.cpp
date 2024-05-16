@@ -19,7 +19,7 @@ protected:
 	void printInfo()
 	{
 		cout << "변의 개수: " << sideNum << endl
-			<< "밑변의 길이: " << baseLength << endl << endl;
+			<< "밑변의 길이: " << baseLength << endl;
 	}
 };
 
@@ -41,7 +41,8 @@ public:
 	void printArea()
 	{
 		printInfo();
-		cout << "* 사각형 넓이.. " << this->baseLength * this->verticalLength << endl << endl;
+		cout << "세로 길이: " << this->verticalLength << endl << endl
+			<< "* 사각형 넓이는.. " << this->baseLength * this->verticalLength << endl << endl;
 	}
 };
 
@@ -63,7 +64,8 @@ public:
 	void printArea()
 	{
 		printInfo();
-		cout << "* 삼각형 넓이는.. " << this->baseLength * this->heightLength * 0.5 << endl << endl;
+		cout << "높이의 길이: " << this->heightLength << endl << endl 
+			<< "* 삼각형 넓이는.. " << this->baseLength * this->heightLength * 0.5 << endl << endl;
 	}
 };
 
