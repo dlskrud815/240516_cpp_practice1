@@ -70,7 +70,5 @@ int main()
 		snackBasket[i]->printSnack();
 	}
 
-	delete[] snackBasket;
-
 	return 0;
 }
